@@ -24,20 +24,20 @@ const ContactPage = () => {
     {
       icon: Phone,
       title: '电话咨询',
-      content: '400-888-8888',
+      content: '13248006376',
       subContent: '周一至周日 9:00-21:00',
     },
     {
       icon: Mail,
       title: '邮件咨询',
-      content: 'contact@luxurytailor.com',
+      content: 'wenganyang@163.com',
       subContent: '24小时内回复',
     },
     {
       icon: MapPin,
       title: '门店地址',
-      content: '上海市静安区南京西路1788号',
-      subContent: '国金中心L3层',
+      content: '浙江省温州市鹿城区白麓里3-1507',
+      subContent: '白麓里3号楼',
     },
     {
       icon: Clock,
@@ -204,7 +204,7 @@ const ContactPage = () => {
                   我们为VIP客户提供专属定制服务，包括一对一私人顾问、优先预约、专属面料选择等特权。
                 </p>
                 <a
-                  href="tel:+864008888888"
+                  href="tel:+8613248006376"
                   className="inline-flex items-center gap-2 text-gold-400 font-medium hover:text-gold-300 transition-colors"
                 >
                   <Phone className="w-4 h-4" />

@@ -34,17 +34,17 @@ const Footer = () => {
               传承百年工艺，为您定制独一无二的高端西装。我们致力于为每一位客户打造完美的着装体验。
             </p>
             <div className="space-y-3">
-              <a href="tel:+864008888888" className="flex items-center gap-3 text-charcoal-400 hover:text-gold-500 transition-colors">
+              <a href="tel:+8613248006376" className="flex items-center gap-3 text-charcoal-400 hover:text-gold-500 transition-colors">
                 <Phone className="w-5 h-5" />
-                400-888-8888
+                13248006376
               </a>
-              <a href="mailto:contact@lagocomo.com" className="flex items-center gap-3 text-charcoal-400 hover:text-gold-500 transition-colors">
+              <a href="mailto:wenganyang@163.com" className="flex items-center gap-3 text-charcoal-400 hover:text-gold-500 transition-colors">
                 <Mail className="w-5 h-5" />
-                contact@lagocomo.com
+                wenganyang@163.com
               </a>
               <div className="flex items-center gap-3 text-charcoal-400">
                 <MapPin className="w-5 h-5" />
-                温州市鹿城区人民东路108号
+                浙江省温州市鹿城区白麓里3-1507
               </div>
             </div>
           </div>
