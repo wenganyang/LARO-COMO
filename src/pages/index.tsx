@@ -146,7 +146,7 @@ const HomePage = () => {
               <div className="absolute -inset-4 bg-gradient-gold/20 rounded-3xl blur-2xl" />
               <div className="relative overflow-hidden rounded-2xl">
                 <Image
-                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=luxury%20men%20tailored%20suit%20on%20mannequin%20in%20elegant%20showroom%20with%20warm%20lighting%20and%20golden%20accents&image_size=portrait_4_3"
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
                   alt="高端定制西装展示"
                   width={500}
                   height={667}

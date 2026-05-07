@@ -9,6 +9,12 @@ const nextConfig = {
         port: '',
         pathname: '/api/ide/v1/text_to_image/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+        port: '',
+        pathname: '/photo-**',
+      },
     ],
   },
 }

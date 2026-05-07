@@ -85,7 +85,7 @@ const AboutPage = () => {
               <div className="absolute -inset-4 bg-gradient-gold/20 rounded-3xl blur-2xl" />
               <div className="relative overflow-hidden rounded-2xl">
                 <Image
-                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=luxury%20tailor%20workshop%20vintage%20craftsmanship%20elegant%20interior%20warm%20lighting%20professional&image_size=portrait_4_3"
+                  src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
                   alt="LAGO COMO 工作室"
                   width={500}
                   height={667}

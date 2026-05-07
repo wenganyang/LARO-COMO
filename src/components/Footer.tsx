@@ -44,7 +44,7 @@ const Footer = () => {
               </a>
               <div className="flex items-center gap-3 text-charcoal-400">
                 <MapPin className="w-5 h-5" />
-                上海市静安区南京西路1788号
+                温州市鹿城区人民东路108号
               </div>
             </div>
           </div>
