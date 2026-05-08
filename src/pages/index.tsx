@@ -141,42 +141,28 @@ const HomePage = () => {
 
       <section className="py-24 bg-gradient-to-br from-charcoal-900 to-charcoal-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-gold/20 rounded-3xl blur-2xl" />
-              <div className="relative overflow-hidden rounded-2xl">
-                <Image
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
-                  alt="高端定制西装展示"
-                  width={500}
-                  height={667}
-                  className="w-full h-auto"
-                />
-              </div>
-            </div>
-            <div>
-              <p className="text-gold-400 text-sm tracking-widest uppercase mb-4">
-                About Luxury Tailor
-              </p>
-              <h2 className="font-serif text-4xl font-bold text-white mb-6">
-                百年传承，<br />匠心定制
-              </h2>
-              <p className="text-charcoal-300 mb-6">
-                自1920年创立以来，LAGO COMO始终秉承"品质至上，匠心独运"的理念。
-                我们的资深裁缝团队拥有数十年的定制经验，每一件西装都经过超过200道工序的精心打造。
-              </p>
-              <p className="text-charcoal-300 mb-8">
-                我们精选来自意大利、英国的顶级面料，结合现代美学与传统工艺，
-                为每一位客户量身定制独一无二的着装艺术品。
-              </p>
-              <Link
-                href="/about"
-                className="inline-flex items-center gap-2 text-gold-400 font-medium hover:text-gold-300 transition-colors"
-              >
-                了解更多
-                <ArrowDown className="w-4 h-4 rotate-[-90deg]" />
-              </Link>
-            </div>
+          <div className="text-center max-w-3xl mx-auto">
+            <p className="text-gold-400 text-sm tracking-widest uppercase mb-4">
+              About Luxury Tailor
+            </p>
+            <h2 className="font-serif text-4xl font-bold text-white mb-6">
+              百年传承，匠心定制
+            </h2>
+            <p className="text-charcoal-300 mb-6">
+              自1920年创立以来，LAGO COMO始终秉承"品质至上，匠心独运"的理念。
+              我们的资深裁缝团队拥有数十年的定制经验，每一件西装都经过超过200道工序的精心打造。
+            </p>
+            <p className="text-charcoal-300 mb-8">
+              我们精选来自意大利、英国的顶级面料，结合现代美学与传统工艺，
+              为每一位客户量身定制独一无二的着装艺术品。
+            </p>
+            <Link
+              href="/about"
+              className="inline-flex items-center gap-2 text-gold-400 font-medium hover:text-gold-300 transition-colors"
+            >
+              了解更多
+              <ArrowDown className="w-4 h-4 rotate-[-90deg]" />
+            </Link>
           </div>
         </div>
       </section>
