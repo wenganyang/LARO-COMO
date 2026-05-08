@@ -21,26 +21,54 @@ const ContactPage = () => {
     setError('')
     setLoading(true)
 
+    const formDataToSubmit = {
+      ...formData,
+      service: formData.service || '未选择',
+      message: formData.message || '无留言',
+      _subject: '新的预约咨询 - LAGO COMO',
+      _redirect: window.location.href + '?success=true',
+    }
+
     try {
-      const response = await fetch('/api/contact', {
+      const response = await fetch('https://formsubmit.co/ajax/wenganyang@163.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Accept': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(formDataToSubmit),
       })
 
-      const data = await response.json()
-
-      if (data.success) {
+      if (response.ok) {
         setSubmitted(true)
         setFormData({ name: '', phone: '', email: '', service: '', message: '' })
-        setTimeout(() => setSubmitted(false), 3000)
+        setTimeout(() => setSubmitted(false), 5000)
       } else {
-        setError(data.message || '提交失败，请稍后重试')
+        throw new Error('邮件发送失败')
       }
     } catch (err) {
-      setError('提交失败，请稍后重试')
+      console.error('发送失败:', err)
+      try {
+        const response = await fetch('/api/contact', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        })
+
+        const data = await response.json()
+
+        if (data.success) {
+          setSubmitted(true)
+          setFormData({ name: '', phone: '', email: '', service: '', message: '' })
+          setTimeout(() => setSubmitted(false), 5000)
+        } else {
+          setError(data.message || '提交失败，请稍后重试')
+        }
+      } catch (fallbackErr) {
+        setError('提交失败，请稍后重试或直接拨打 13248006376 联系我们')
+      }
     } finally {
       setLoading(false)
     }
