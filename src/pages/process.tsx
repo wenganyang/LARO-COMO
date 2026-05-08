@@ -12,35 +12,35 @@ const ProcessPage = () => {
       number: '01',
       title: '预约咨询',
       description: '预约私人顾问，了解您的需求和风格偏好。我们提供线上咨询和到店服务两种方式。',
-      image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: '/预约咨询.png',
     },
     {
       icon: Ruler,
       number: '02',
       title: '精准量体',
       description: '资深裁缝为您进行专业量体，记录超过30个精准数据，确保西装完美贴合身形。',
-      image: 'https://images.unsplash.com/photo-1582552938357-32b906df40cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: '/精准量体.png',
     },
     {
       icon: Palette,
       number: '03',
       title: '面料选择',
       description: '在我们的面料库中挑选心仪的面料，从意大利羊毛到英国精纺，应有尽有。',
-      image: 'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: '/面料选择.png',
     },
     {
       icon: Scissors,
       number: '04',
       title: '匠心制作',
       description: '由资深裁缝手工缝制，超过200道工序，历时30天精心打造您的专属西装。',
-      image: 'https://images.unsplash.com/photo-1587664525271-18e795553d66?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: '/匠心制作.png',
     },
     {
       icon: CheckCircle,
       number: '05',
       title: '试穿调整',
       description: '完成制作后进行试穿，根据您的反馈进行微调，确保完美贴合。',
-      image: 'https://images.unsplash.com/photo-1593030668930-c13d0d210d66?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: '/试穿调整.png',
     },
   ]
 
@@ -73,8 +73,6 @@ const ProcessPage = () => {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative">
-            <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-gold-200 via-gold-400 to-gold-200 -translate-y-1/2" />
-            
             <div className="space-y-16">
               {steps.map((step, index) => (
                 <div
