@@ -7,11 +7,11 @@ import Footer from '../components/Footer'
 
 const AboutPage = () => {
   const milestones = [
-    { year: '1920', event: '品牌创立于上海，开启百年定制传奇' },
-    { year: '1950', event: '成为上海知名定制品牌，服务政商名流' },
-    { year: '1980', event: '引入意大利顶级面料，提升品质标准' },
-    { year: '2000', event: '开设多家分店，服务网络覆盖全国' },
-    { year: '2024', event: '传承百年匠心，持续创新发展' },
+    { year: '1920', event: 'Giovanni Rossi在意大利科莫湖畔创立品牌' },
+    { year: '1950', event: '成为意大利知名定制品牌，服务欧洲名流' },
+    { year: '1980', event: '品牌进入中国，带来意大利传统定制工艺' },
+    { year: '2000', event: '在中国开设多家门店，服务网络不断扩展' },
+    { year: '2024', event: '传承意大利匠心，持续创新发展' },
   ]
 
   const stats = [
@@ -58,14 +58,13 @@ const AboutPage = () => {
                 百年传承，<br />匠心定制
               </h2>
               <p className="text-charcoal-500 mb-6">
-                自1920年创立以来，LAGO COMO始终秉承"品质至上，匠心独运"的理念。
-                我们的创始人李先生是一位技艺精湛的裁缝，他相信每一位男士都值得拥有一套
-                完美贴合身形的西装。
+                1920年，品牌创立于意大利科莫湖畔。我们的创始人Giovanni Rossi是一位技艺精湛的裁缝，
+                他相信每一位男士都值得拥有一套完美贴合身形的西装。
               </p>
               <p className="text-charcoal-500 mb-8">
-                历经百年风雨，我们始终坚持手工定制的传统工艺，同时不断引入国际顶级面料
-                和现代设计理念。如今，LAGO COMO已成为国内高端定制领域的标杆品牌，
-                服务过无数政商名流和社会精英。
+                从意大利到中国，我们始终坚持手工定制的传统工艺，同时不断引入国际顶级面料
+                和现代设计理念。如今，LAGO COMO已成为高端定制领域的标杆品牌，
+                服务过无数名流精英。
               </p>
               <div className="grid grid-cols-2 gap-6">
                 {stats.map((stat, index) => (
@@ -85,8 +84,8 @@ const AboutPage = () => {
               <div className="absolute -inset-4 bg-gradient-gold/20 rounded-3xl blur-2xl" />
               <div className="relative overflow-hidden rounded-2xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
-                  alt="LAGO COMO 工作室"
+                  src="/意大利裁缝.png"
+                  alt=""
                   width={500}
                   height={667}
                   className="w-full h-auto"

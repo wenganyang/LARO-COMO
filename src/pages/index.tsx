@@ -242,10 +242,10 @@ const HomePage = () => {
               立即预约
             </Link>
             <a
-              href="tel:+864008888888"
+              href="tel:+8613248006376"
               className="px-8 py-4 border-2 border-white text-white font-semibold rounded-full hover:bg-white/10 transition-all duration-300"
             >
-              电话咨询 400-888-8888
+              电话咨询 13248006376
             </a>
           </div>
         </div>

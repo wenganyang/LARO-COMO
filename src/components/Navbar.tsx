@@ -58,13 +58,13 @@ const Navbar = () => {
 
           <div className="hidden lg:flex items-center gap-4">
             <a 
-              href="tel:+864008888888" 
+              href="tel:+8613248006376" 
               className={`flex items-center gap-2 text-sm font-medium transition-colors duration-300 ${
                 isScrolled ? 'text-charcoal-700' : 'text-white/90'
               }`}
             >
               <Phone className="w-4 h-4" />
-              400-888-8888
+              13248006376
             </a>
             <Link
               href="/contact"
@@ -99,11 +99,11 @@ const Navbar = () => {
               ))}
               <div className="pt-4">
                 <a 
-                  href="tel:+864008888888" 
+                  href="tel:+8613248006376" 
                   className="flex items-center gap-2 text-charcoal-700"
                 >
                   <Phone className="w-4 h-4" />
-                  400-888-8888
+                  13248006376
                 </a>
               </div>
               <Link

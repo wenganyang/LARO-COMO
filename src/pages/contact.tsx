@@ -13,11 +13,37 @@ const ContactPage = () => {
     message: '',
   })
   const [submitted, setSubmitted] = useState(false)
+  const [error, setError] = useState('')
+  const [loading, setLoading] = useState(false)
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    setSubmitted(true)
-    setTimeout(() => setSubmitted(false), 3000)
+    setError('')
+    setLoading(true)
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      const data = await response.json()
+
+      if (data.success) {
+        setSubmitted(true)
+        setFormData({ name: '', phone: '', email: '', service: '', message: '' })
+        setTimeout(() => setSubmitted(false), 3000)
+      } else {
+        setError(data.message || '提交失败，请稍后重试')
+      }
+    } catch (err) {
+      setError('提交失败，请稍后重试')
+    } finally {
+      setLoading(false)
+    }
   }
 
   const contactInfo = [
@@ -150,16 +176,28 @@ const ContactPage = () => {
                     placeholder="请描述您的需求..."
                   />
                 </div>
+                {error && (
+                  <div className="p-4 bg-red-50 border border-red-200 rounded-xl text-red-600 text-sm">
+                    {error}
+                  </div>
+                )}
                 <button
                   type="submit"
-                  disabled={submitted}
+                  disabled={submitted || loading}
                   className={`w-full py-4 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center gap-2 ${
                     submitted
                       ? 'bg-green-500 text-white'
+                      : loading
+                      ? 'bg-gray-400 text-white cursor-not-allowed'
                       : 'bg-gradient-gold text-white hover:shadow-lg hover:shadow-gold-500/25'
                   }`}
                 >
-                  {submitted ? (
+                  {loading ? (
+                    <>
+                      <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                      提交中...
+                    </>
+                  ) : submitted ? (
                     <>
                       <CheckCircle className="w-5 h-5" />
                       提交成功
