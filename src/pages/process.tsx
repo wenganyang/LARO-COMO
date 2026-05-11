@@ -87,11 +87,10 @@ const ProcessPage = () => {
             <video
               controls
               className="w-full h-auto"
-              poster="/videos/video-cover.jpg"
               playsInline
               preload="metadata"
             >
-              <source src="/videos/craftsmanship.mp4" type="video/mp4" />
+              <source src="/videos/final (3).mp4" type="video/mp4" />
               您的浏览器不支持视频播放
             </video>
           </div>
