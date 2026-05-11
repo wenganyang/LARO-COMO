@@ -70,33 +70,6 @@ const ProcessPage = () => {
         </div>
       </section>
 
-      <section className="py-24 bg-gradient-to-br from-charcoal-900 to-charcoal-800">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="text-center mb-12">
-            <p className="text-gold-400 text-sm tracking-widest uppercase mb-4">
-              Craftsmanship
-            </p>
-            <h2 className="font-serif text-4xl font-bold text-white mb-4">
-              匠心工艺展示
-            </h2>
-            <p className="text-charcoal-300 max-w-2xl mx-auto">
-              观看我们的定制工艺视频，了解每一件西装背后的匠心与专注
-            </p>
-          </div>
-          <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-charcoal-950">
-            <video
-              controls
-              className="w-full h-auto"
-              playsInline
-              preload="metadata"
-            >
-              <source src="/videos/final (3).mp4" type="video/mp4" />
-              您的浏览器不支持视频播放
-            </video>
-          </div>
-        </div>
-      </section>
-
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative">
