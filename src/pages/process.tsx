@@ -83,14 +83,17 @@ const ProcessPage = () => {
               观看我们的定制工艺视频，了解每一件西装背后的匠心与专注
             </p>
           </div>
-          <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-            <Image
-              src="/videos/image_361091416662635.png"
-              alt="匠心工艺展示"
-              width={1200}
-              height={675}
+          <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-charcoal-950">
+            <video
+              controls
               className="w-full h-auto"
-            />
+              poster="/videos/video-cover.jpg"
+              playsInline
+              preload="metadata"
+            >
+              <source src="/videos/craftsmanship.mp4" type="video/mp4" />
+              您的浏览器不支持视频播放
+            </video>
           </div>
         </div>
       </section>
